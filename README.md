@@ -60,3 +60,30 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Hoto Install
+
+Setelah kita clone atau download dari repositori GitHub, atau dari manapun, jalankan perintah di command prompt, sebelumnya kita harus menuju ke lokasi folder aplikasi tersebut:
+
+composer install
+
+
+Perintah ini akan menginstal librari-librari atau dependencies yang digunakan Laravel.
+##copy .env.example .env
+Berikutnya, kita perlu membuat file .env berdasarkan dari file .env.example, caranya jalankan perintah:
+
+copy .env.example .env
+
+
+## Setelah berhasil membuat file .env, beirkutnya jalankan perintah:
+
+php artisan key:generate
+
+php artisan migrate
+
+php artisan db:seed
+
+php artisan serve
+
+Lalu jalankan http://localhost:8000
+
